@@ -14,8 +14,6 @@ import { GraphQLExtension } from 'graphql-extensions';
 import { EngineReportingAgent } from 'apollo-engine-reporting';
 import { InMemoryLRUCache } from 'apollo-server-caching';
 
-import { GraphQLUpload } from 'apollo-upload-server';
-
 import {
   SubscriptionServer,
   ExecutionParams,
@@ -150,6 +148,7 @@ export class ApolloServerBase {
 
     //Add upload resolver
     if (this.uploadsConfig) {
+      const { GraphQLUpload } = require('apollo-upload-server');
       if (resolvers && !resolvers.Upload) {
         resolvers.Upload = GraphQLUpload;
       }
