@@ -1,7 +1,3 @@
-export * from 'graphql-tools';
-
-export { ApolloServer } from './ApolloServer';
-
 export {
   GraphQLOptions,
   GraphQLExtension,
@@ -20,3 +16,7 @@ export {
   PlaygroundConfig,
   PlaygroundRenderPageOptions,
 } from 'apollo-server-core';
+
+export { ApolloServer } from './ApolloServer';
+
+export * from 'graphql-tools';
