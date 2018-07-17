@@ -3,7 +3,6 @@ export * from 'graphql-subscriptions';
 
 export {
   gql,
-  GraphQLUpload,
   GraphQLOptions,
   GraphQLExtension,
   Config,
@@ -21,4 +20,4 @@ export {
   PlaygroundRenderPageOptions,
 } from 'apollo-server-core';
 
-export { CorsOptions } from 'apollo-server-express';
+export { CorsOptions, GraphQLUpload } from 'apollo-server-express';

@@ -3,7 +3,6 @@ export * from 'graphql-tools';
 export { ApolloServer } from './ApolloServer';
 
 export {
-  GraphQLUpload,
   GraphQLOptions,
   GraphQLExtension,
   Config,

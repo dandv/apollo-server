@@ -1,5 +1,4 @@
 export {
-  GraphQLUpload,
   GraphQLOptions,
   GraphQLExtension,
   Config,
@@ -17,6 +16,8 @@ export {
   PlaygroundConfig,
   PlaygroundRenderPageOptions,
 } from 'apollo-server-core';
+
+export { GraphQLUpload } from 'apollo-upload-server';
 
 export * from 'graphql-tools';
 export * from 'graphql-subscriptions';
